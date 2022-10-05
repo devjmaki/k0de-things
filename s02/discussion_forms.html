@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <!-- HTML FORMS - I/O -->
+    <form action="">
+        <!-- groups and identifies that a user can interact with the webpage-->
+        <!-- p for clean coding and spacing -->
+        <p>
+            <label for="fname">First Name:</label> 
+            <input type='text' id="fname" name="fname" value='' placeholder='Enter your First Name'/>
+        </p>
+        <p>
+            <label for="lname">Last Name:</label> 
+            <input type='text' id="lname" name="lname" value='' placeholder='Enter your Last Name'/>
+        </p>
+        <p>
+            <input type="submit" value="Submit"> <!-- confirms the value entered by the user-->
+            <input type="reset" value="Clear"> <!-- removes the information provided by the user -->
+        </p>
+    </form>
+
+    <h1>
+        Survey Form 
+    </h1>
+
+    <form action="">
+        <p>
+            <label for="fname">First Name:</label> 
+            <input type='text' id="fname" name="fname"/>
+        </p>
+
+        <p>
+            <label for="lname">Last Name:</label> 
+            <input type='text' id="lname" name="lname"/>
+        </p>
+
+        <p>
+            <label for="emailAdd">Email Address:</label> 
+            <input type='email' id="emailAdd" name="emailAdd"/>
+        </p>
+
+        <p>
+            <!-- radio button -->
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Onsite</label>
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Online</label>
+        </p>
+
+        <p>
+            What do you like about our bootcamp?
+        </p>
+
+        <p>
+            <!-- checkbox -->
+            <input type="checkbox" name="classroom" id="classroom" value="classroom">
+            <label for="classroom">Classroom Experience</label> <br>
+    
+            <input type="checkbox" name="exp" id="exp" value="exp">
+            <label for="exp">Instructor Expertise</label> <br>
+
+            <input type="checkbox" name="collab" id="collab" value="collab">
+            <label for="collab">Collaboration</label> <br>
+
+            <input type="checkbox" name="others" id="others" value="others">
+            <label for="others">Others</label>
+            <input type="text" name="others" id="others"> <br>
+        </p>
+
+        <p>
+            <label for="bNum">Batch Number:</label> 
+            <!-- dropdown menu -->
+            <select name="bNum" id="bNum">
+                <option value="select">Select</option>
+                <option value="b26">Batch 26</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="instructor">Instructor:</label> 
+            <input type='text' id="emailAdd" name="emailAdd"/>
+        </p>
+
+        <p>
+            <label for="comments">Comments for your Instructor:</label>
+            <textarea name="comments" id="" cols="30" rows="10" placeholder='Type your comments here.'></textarea>
+        </p>
+
+        <p>
+            <!-- form handler - back-end -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+        
+    </form>
+</body>
+</html>
