@@ -20,8 +20,9 @@ h1{
 }
 
 /*Change the border of the tools to be used list items using an attribute selectors*/
-[title~="tools"] {
+[title^="tools"]{
     border: 2px;
+    text-indent: 1em;
 }
 
 #jslogo img{
