@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="form.png" type="image/icon type">
+
+    <!-- Inline style css -->
+    <style>
+        .container{ position:relative; left: 30%; border: 2px solid black; border-radius: 10px; padding:20px; width:40%; margin: 10% 0 50% 0;}
+        h1, h3 {text-align: center;}
+    </style>
+    
+</head>
+<body>
+
+    <!-- container for Login Form --> 
+    <div class="container">
+
+        <h1>
+            Login Page
+        </h1>
+        
+        <!-- HTML Form for Login Page; assigned an id as identifier -->
+        <form action="#servicereq">
+
+            <p>
+                <!-- Username field -->
+                <label for="uname">Username:</label>
+                <input type="text" name="uname" id="uname" value="" required>
+            </p>
+        
+            <p>
+                <!-- Password field -->
+                <label for="pass">Password</label>
+                <input type="text" name="pass" id="pass" value="" required>
+            </p>
+    
+            <p>
+                <!-- message alert -->
+                <button type="submit" onclick="alert('Thank you for logging in.')" value="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+
+        </form>
+    </div>
+
+    <!-- container for Service Request Form -->
+    <div class="container" id="servicereq">
+        
+        <h1>
+            ABC Company IT Support Request Form
+        </h1>
+        
+        <!-- HTML form for Service Request Page -->
+        <form action="">
+
+            <p>
+                <!-- First Name field -->
+              <label for="fname">First Name:</label>
+              <input type="text" name="fname" id="fname" size="70">
+            </p>
+    
+            <p>
+                <!-- Last Name field -->
+              <label for="lname">Last Name:</label>
+              <input type="text" name="lname" id="lname" size="70">
+            </p>
+    
+            <p>
+                <!-- Email Address field -->
+                <label for="emailAdd">Email Address:</label>
+                <input type="email" name="emailAdd" id="emailAdd" size="70">
+            </p>
+    
+            <p>
+                <!-- Contact Number field -->
+                <label for="contactNumber">Contact Number:</label>
+                <input type="text" name="contactNumber" id="contactNumber" placeholder="Enter your complete phone number with extension or mobile number" size="70">
+            </p>
+    
+            <p>
+                <!-- Radio button -->
+                <input type="radio" id="employeeType" name="employeeType">
+                <label for="employeeType">Onsite</label>
+                <input type="radio" id="employeeType" name="employeeType">
+                <label for="employeeType">Work From Home</label>
+            </p>
+    
+            <p>
+                Location: <br>
+                For onsite, please state your Workstation No., Department, Floor and Building.<br>
+                For work from home, please complete your address and include a landmark nearest to your location. <br>
+                <input type="text" size="70">
+            </p>
+    
+            <p>
+                <label for="servicereqType">Service Request Type:</label>
+                <select name="servicereqType" id="servicereqType" size="9"> <!-- drop-down menu -->
+                    <option value="desklapSetup">Desktop/Laptop Setup</option>
+                    <option value="desklapSupport">Desktop/Laptop Support</option>
+                    <option value="desklapMaintenance">Desktop/Laptop Maintenance</option>
+                    <option value="softwareInstallation">Software Installation</option>
+                    <option value="softwareSupport">Software Support</option>
+                    <option value="compperipheralSetup">Computer Peripheral Setup</option>
+                    <option value="compperipheralTroubleshooting">Computer Peripheral Troubleshooting</option>
+                    <option value="compperipheralMaintenance">Computer Peripheral Maintenance</option>
+                </select>
+            </p>
+    
+            <p>
+                Request Description:<br>
+                <textarea name="requestDescription" id="" cols="30" rows="10" placeholder="Explain your service request as details as possible"></textarea>
+            </p>
+    
+            <p>
+                <label for="fileselect">Upload a picture/screenshot for reference.</label>
+                <input type="file" name="upload" id="fileselect">
+            </p>
+    
+            <p>
+                <input type="submit" value="Submit"> <!-- Submit button-->
+                <input type="reset" value="Reset"> <!-- Reset button -->
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>
