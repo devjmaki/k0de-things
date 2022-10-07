@@ -108,3 +108,34 @@ a:hover {
 a:active {
     color:dodgerblue;
 }
+
+/*pseudo element - style a specific part of an element
+
+first line - when we shrink/ resize our web page */
+
+p::first-letter{
+    color: brown;
+    font-size: 200%;
+}
+
+/* manipulating pics in css*/
+#my_pengu img{
+    width: 10%;
+    height: 10%;
+    border-radius: 4px;
+    background-color: pink;
+}
+
+li + /* li */ {
+    list-style-type: none;
+}
+
+ul > li {
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
