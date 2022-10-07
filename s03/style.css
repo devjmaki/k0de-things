@@ -1,141 +1,50 @@
-/*Universal selector*/
+/*Change the font-family and the font-size of all elements using the universal selector*/
 * {
-    font-family: 'Lobster', cursive;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
 }
 
-h1 {
-    color: brown;
+/*Change the font-size of h1 using a type selector.*/
+h1{
+    font-size: 40px;
 }
 
-/*ID Selector*/
-
-#title-1 {
-    color: #0AB6FB;
+/*Change the text to all upper case for h2 tags using an id selector*/
+#transform{
+    text-transform: uppercase;
 }
 
-/*Class Selector*/
-.title-2 {
-    color: violet;
-    text-align: center;
+/*Change the background colors of the languages to be learn list items using a class selector*/
+.olist{
+    background-color: yellowgreen;
 }
 
-/*Attribute Selector*/
-[type="text"] {
-    background-color: aquamarine;
+/*Change the border of the tools to be used list items using an attribute selectors*/
+[title~="tools"] {
+    border: 2px;
 }
 
-/*Combinator Selector*/
-
-/*Descendant Selector
-- selects/targets "all elements" that matches the specified element
-Syntax: first element child element {
-    property: value
-}
-*/
-
- /* div p {
-    background-color: red;
-} */
-
-/* Child Selector
-- selects/targets "all" elements that are all "children" of a specified element
-*/
-
-/* div > p {
-    background-color: chocolate;
-}  */
-
-/*Adjacent Sibling Selector (+)
-    - selects/targets an element that is directly after (katabi) the first selector
-*/
-
-/* p + p {
-    background-color: maroon;
-}
-div + p {
-    background-color: #E228BD;
-} */
-
-/* div + p {
-    background-color: red;
-} */
-
-/*
-General Sibling Selector (~)
-*/
-
-/* p ~ p {
-    background-color: fuchsia;
-} */
-
-/*
-Medium devices (landscape tablet, 500px and up)
-*/
-@media only screen and (min-width: 500px) {
-    .screen {
-        background-color:pink;
-        
-    }
+#jslogo img{
+    border-radius: 50%;
 }
 
-/* Large Devices (laptops and desktops, 900px and up)*/
-@media only screen and (min-width: 900px) {
-    .screen {
-        background-color:blue;
-    }
-}
-
-/*Pseudo Class
-selector: pseudo-class {property:value}
-*/
-
-/*Unlisted Link*/
-a:link {
-    color:red;
-}
-
-/*visited link*/
-a:visited {
-    color:green;
-}
-
-/*mouse over link */
-a:hover {
-    color:orange;
-}
-
-/*selected link*/
-a:active {
-    color:dodgerblue;
-}
-
-/*pseudo element - style a specific part of an element
-
-first line - when we shrink/ resize our web page */
-
-p::first-letter{
-    color: brown;
-    font-size: 200%;
-}
-
-/* manipulating pics in css*/
-#my_pengu img{
-    width: 10%;
-    height: 10%;
-    border-radius: 4px;
-    background-color: pink;
-}
-
-li + /* li */ {
+/*Change the list style type of other things to be learned using an adjacent sibling selector*/
+div + ul{
     list-style-type: none;
 }
 
-ul > li {
-    letter-spacing: 4px;
+/*Change the dimensions of the image tag using a descendant selector. */
+div img{
+    width: 120px;
+    height: 110px;
 }
 
+/*Change the letter spacing of other things to be learned list items using a child selector.*/
+ul > li{
+    letter-spacing: 0.5em;
+} 
 
-
-
-
-
+/*Change the alignment of the last paragraph using a general sibling selector */
+p ~ footer {
+    text-align: right;
+}
