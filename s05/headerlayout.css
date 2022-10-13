@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    color: azure;
 }
 
 .header{
@@ -15,7 +16,6 @@ body{
 
 .logo{
     border: 2px dotted rgb(58, 213, 161);
-    color: azure;
     position: absolute;
     top: 8px;
     left: 15px;
@@ -26,7 +26,6 @@ body{
 .top-nav{
     border: 2px rgb(32, 93, 234);
     border-style: dashed double;
-    color: azure;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -36,7 +35,6 @@ body{
 
 .menu{
     border: 2px dashed rgb(228, 224, 31);
-    color: azure;
     position: absolute;
     bottom: 14px;
     right: 17px;
