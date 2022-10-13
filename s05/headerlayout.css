@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+
+.header{
+    width: 800px;
+    height: 150px;
+    border: 4px inset rgb(193, 92, 108); 
+    margin: auto; /*center div*/
+    position: relative; 
+    font-size: 1.5em;
+    text-indent: 0.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    border: 2px dotted rgb(58, 213, 161);
+    color: azure;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    width: 41%;
+    height: 42%;
+}
+
+.top-nav{
+    border: 2px rgb(32, 93, 234);
+    border-style: dashed double;
+    color: azure;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 26%;
+    height: 17%;
+}
+
+.menu{
+    border: 2px dashed rgb(228, 224, 31);
+    color: azure;
+    position: absolute;
+    bottom: 14px;
+    right: 17px;
+    width: 61%;
+    height: 20%;
+}
