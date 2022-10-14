@@ -1,0 +1,74 @@
+/* media query - CSS 3 feature that makes a webpage adapt its layout to diff screen sizes 
+
+syntax: @media media type and (condition: breakpoint){
+    CSS rules -how page looks like using diff size
+}
+
+@media - media rule 
+specify target media type 
+
+() - where condition is set 
+
+"example: screen" media type - follows media rule & then selects media size
+- concatenate statements (joins) using 'and' keyword 
+
+breakpoint - key to determine when to change the layout and adapt new rules inside the query */ 
+
+*{
+    box-sizing: border-box;
+}
+
+.left{
+    background-color:  #98DAF1;
+    padding: 40px;
+    float: left;
+    width: 20%; /* set width def prior declaring media size */
+}
+
+.main{
+    background-color: #E78C89;
+    padding: 40px;
+    float: left;
+    width: 60%; /* set width def prior declaring media size */
+}
+
+.right{
+    background-color:  #81CB71;
+    padding: 40px;
+    float: left;
+    width: 20%; /* set width def prior declaring media size */
+}
+
+/*media query to add breakpoint */
+
+/* for desktop */
+@media screen and (min-width: 1024px){
+    .left, .main, .right {
+        width: 100%; /* set width to 100% */
+        height: 0;
+    }
+
+    /* change is applicable to 1024px size and above */
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .main {
+        position: fixed;
+        width: 100%;
+        top: 100px; 
+    }
+
+    .left{
+        width: 50%;
+        position: relative;
+        top: 100px;
+    }
+
+    .right{
+        position: relative;
+        left: 1px;
+        width: 50%;
+        top: 100px;
+    }
+}
+
