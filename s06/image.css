@@ -1,0 +1,94 @@
+img{
+    border: 5px solid pink;
+}
+
+#responsive{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s; /*seconds*/
+}
+
+#responsive:hover{
+    opacity: 0.7;  /*transparency level; 0 - completely transparent*/
+
+}
+
+/* modal background */
+.modal{
+    display: none; /* hidden as def */ 
+    position: fixed; 
+    z-index: 1; /* sit on top; -1 if back */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* full width for modal */
+    height: 100%; /* full height */ 
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* fall back color */
+    background-color: rgb(0, 0, 0, 0.9); /* black with opacity */
+}
+
+/* modal content (img) */ 
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 600px;
+}
+
+/* caption modal img */
+#caption {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 600px;
+    height: 150px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* animation */
+.modal-content, #caption{
+    -webkit-animation-name: zoom;   /* webkit - compatibility of browser */
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from 
+    {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1);} /* 2d animation */
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    tp {transform: scale(1);}
+}
+
+/* close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: pink;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.3s; /*animation*/
+}
+
+.close:hover, .close:focus{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% img width on smaller screens */
+@media only screen and (max-width: 600px){
+    .modal-content {
+        width: 100%;
+    }
+}
