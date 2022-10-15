@@ -1,0 +1,356 @@
+body{
+    background-color: #BCB0A1;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+/* header logo */
+.hdrlogo {
+    display: inline-block;
+    position: relative;
+    width: 16%;
+    margin: 35px 40px;
+}
+
+/* contains nav bar */
+.container{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right; 
+    position: fixed; /* naka stay*/ 
+    width: 200px;
+    top: 55%;
+    right: 5%;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+/* nav bar */ 
+ul li, a {
+    list-style-type: none; /* remove bullet points */
+    text-decoration: none; /* remove underline */ 
+    color: #985836;
+}
+
+/* changes color when mouse hovers */
+nav > ul > li > a:hover {
+  color: black;
+}
+
+/* main */
+.landing {
+    position: absolute;
+    left: 15%;
+    display: flex; /* required */ 
+    flex-direction: column; /* direction is top -> bot */ 
+    text-align: left;
+    width: 65%; 
+    max-width: 70%; 
+    margin: 0 auto;
+    padding: 90px 0; /*90px- top and bot; 0 - left and right; */
+    /*padding: 90px 35px 0 0; - clockwise*/
+}
+
+/* main h1 class */
+.greet{
+    font-size: 7rem;
+    margin: 0;
+    width: 70%;
+}
+
+/* animation */
+main h1{
+    font-size: 7rem;
+    position: relative;
+    margin: 0;
+}
+  
+main h1::before,
+main h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+main h1::before {
+    background-color: #BCB0A1;
+    animation: typewriter 6s
+      steps(18) 1s forwards;
+}
+  
+main h1::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter 6s
+        steps(18) 1s forwards,
+      blink 600ms steps(18) infinite;
+}
+  
+main h2, main p, main div {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(6s + 2s) forwards;
+}
+  
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+}
+  
+@keyframes blink {
+    to {
+      background: transparent;
+    }
+}
+  
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+ /* end of animation */ 
+
+main h2{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main p{
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.landing > h1 > span {
+    color: #482317;
+}
+
+main button{
+    background-color: transparent;
+    width: 160px;
+    border-color: #985836;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+    margin-right: 1.5rem;
+}
+
+/* text inside button */
+main button a {
+    color: black;
+}
+
+/* change color of button when mouse hovers */
+main button:hover{
+    background-color: #482317;
+}
+
+/* change color of text when mouse hovers */
+main button a:hover {
+    color: #ffff;
+}
+
+.btn{
+    display: inline-block;
+}
+
+/* section 1*/
+.sec1{
+    width: 65%;
+    max-width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    margin: 0;
+}
+
+section .main-content .item-container {
+    background-color: #985836;
+    border-radius: 5px;
+    display: flex;
+    isolation: isolate;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 2rem;
+    padding: 20px;
+    transition: background-color .15s;
+    z-index: 9;
+}
+
+/* if odd - picture on right; if even - picture on left */
+section .main-content > .item-container:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+/* image - wrap*/ 
+section .main-content .item-container .image-wrap {
+    flex-shrink: 0;
+    width: 500px;
+    height: 15rem;
+    overflow: hidden;
+    padding: 10px;
+}
+
+section .main-content .item-container:hover .image-wrap > img {
+    transform: scale(1.05);
+}
+
+/* when mouse hovers on item-container */ 
+section .main-content .item-container:hover {
+    background-color: rgb(146, 141, 141);
+}
+
+/* transition for img */ 
+section .main-content .item-container .image-wrap > img {
+    width: 100%;
+    height: auto;
+    transition: 0.2s ease-out;
+}
+
+/* targets h3 in section 1 */
+section .main-content .item-container .item-details > h3 {
+    font-weight: 500;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+/*targets p in section 1 */
+section .main-content .item-container .item-details > p {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 160%;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    margin: 1rem; /* margin around p within container */
+    text-align: justify; /* justify content */
+}
+
+/* end of section 1 */
+
+/* section 2 - services */ 
+.sec2{
+    width: 65%;
+    max-width: 70%;
+    height: 40%;
+    position: absolute;
+    top: 250%;
+    left: 15%;
+}
+
+/* end of sec 2 */ 
+.sec3{
+    width: 65%;
+    max-width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 320%;
+    left: 15%;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+/*cards */
+section .cards{
+    margin: 1rem;
+    background-color: rgba(92, 59, 29, 0.7); /* to blur bg but not text, use rgba */
+    width: 220px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+/* targets p in cards */ 
+section .cards > p{
+    text-align: justify;
+    margin: 0.8rem;
+    font-size: 0.9rem;
+}
+
+/*targets header in cards */
+section .cards > header{
+    text-align: center;
+    margin: 0.8rem;
+    font-size: 0.7rem;
+}
+
+/*targets h3 in cards */
+section .cards > h3{
+    text-align: left;
+    margin: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/*end of sec 3 */
+
+/*sec 4 */
+.sec4{
+    width: 65%;
+    max-width: 70%;
+    height: 40%;
+    position: absolute;
+    top: 400%;
+    left: 15%;
+    line-height: 2rem;
+}
+
+.imglist{
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+form{
+    background-color: rgba(198, 124, 54, 0.7);
+    position: relative;
+    width: 430px;
+    height: 190px;
+    left: 35%;
+    bottom: 125px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+form p {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+
+form p > label {
+    font-size: 2 rem;
+}
+
+/*end of sec 4*/
+
+/*footer */
+footer{
+    position: absolute;
+    top: 470%;
+    background-color: #985836;
+}
+
+footer p{
+    display: inline-block;
+    color: black;
+    margin-left: 2.3rem;
+}
+
+.ftrlogo{
+    justify-content: center;
+    display: inline;
+    position: relative;
+    width: 16%;
+    margin-left: 2.3rem;
+    margin-top: 0.9rem;
+    color: black;
+}
