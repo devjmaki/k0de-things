@@ -1,0 +1,37 @@
+.block {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    padding: 1.5rem;
+}
+
+.block a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+nav > ul > li{
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+    margin-right: 2rem;
+}
+
+nav > ul > li > a:hover{
+    background-color: rgb(115, 237, 115);
+    color: black;
+    border-radius: 5px;
+}
+
+/* ipads and tablet */
+@media screen and  (min-width: 481px) and (max-width:768px){
+    nav > ul > li > a {
+       float: none;
+       width: 100%;
+    }
+}
