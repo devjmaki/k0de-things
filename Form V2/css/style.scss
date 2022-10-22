@@ -1,11 +1,10 @@
-
 @import 'variables';
 @import 'mixins';
 @import 'form';
 
 body {
     font-family: $karla; 
-    background-color: $primary-color;
+    background-color: $primary;
     padding: $spacing;
     min-height: 100vh;
     @include flex-center(); 

@@ -1,13 +1,13 @@
 /* - can nest classes in scss file */
 
-/* form */
+// login form
 #login{
-    background-color: $primary-color;
+    background-color: $primary;
     width: 35%;
     height: 460px;
     margin: $formSpace;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    @include border-radius(5px); /* using the mixins function */
+    @include border-radius(5px); 
     
     .form-content{
         margin-left: $formSpace;
@@ -97,13 +97,14 @@
     }
 }
 
+// request form
 #reqForm{
-    background-color: $primary-color;
+    background-color: $primary;
     width: 55%;
     height: auto;
     margin: $formSpace;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    @include border-radius(5px); /* using the mixins function */
+    @include border-radius(5px);
 
     .container{
         padding: 0 $spacing;

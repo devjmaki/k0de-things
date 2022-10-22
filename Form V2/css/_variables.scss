@@ -2,18 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-// font variables
+// font var
 $karla: 'Karla', sans-serif; 
 $kanit: 'Kanit', sans-serif;
 
-// color variables
-$primary-color: #cccccc;
+// color var
+$primary: #cccccc;
 $light: #fff;
 $dark: #999;
 $link: rgb(48, 43, 43);
 
+// spacing var
 $sm: 0.5rem;
 $spacing: 1.5rem;
 $formSpace: 2.5rem;
 
+// font size var
 $font-sm: 0.8rem;
