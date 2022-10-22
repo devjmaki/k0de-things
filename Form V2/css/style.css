@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+/* $radius is the parameter of the function */
+/* - can nest classes in scss file */
+/* form */
+#login {
+  background-color: #cccccc;
+  width: 35%;
+  height: 460px;
+  margin: 2.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* using the mixins function */
+}
+#login .form-content {
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#login .form-content:last-of-type {
+  margin-bottom: 0.5rem;
+}
+#login .input-group:last-of-type {
+  margin-bottom: 0;
+}
+#login .input-group-text {
+  z-index: 1;
+  width: 11%;
+}
+#login .lock {
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  margin: 3px;
+}
+#login input {
+  background-color: #999;
+  border: none;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  width: 67%;
+}
+#login .link {
+  color: #999;
+  text-decoration: none;
+  text-align: end;
+  margin-right: 4.2rem;
+  margin-top: -15px;
+  font-size: 0.8rem;
+}
+#login .link:hover {
+  color: rgb(48, 43, 43);
+}
+#login hr {
+  display: block;
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 27%;
+  margin-left: 2.5rem;
+  margin-top: 1.5rem;
+  z-index: 1;
+  border: 0;
+  background-color: #999;
+  justify-content: center;
+}
+#login h2 {
+  font-size: 0.8rem;
+  margin-top: 2.5rem;
+}
+#login .alt {
+  width: 30px;
+  height: auto;
+  position: fixed;
+  margin-right: 0.5rem;
+}
+#login .alt:hover {
+  width: 35px;
+}
+#login #alt-fb {
+  left: 45%;
+  top: 74%;
+}
+#login #alt-twt {
+  left: 49%;
+  top: 74%;
+}
+#login #alt-gg {
+  left: 53%;
+  top: 74%;
+}
+
+#reqForm {
+  background-color: #cccccc;
+  width: 55%;
+  height: auto;
+  margin: 2.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* using the mixins function */
+}
+#reqForm .container {
+  padding: 0 1.5rem;
+}
+#reqForm .in-container, #reqForm .txt-space {
+  width: 75%;
+  border: none;
+  background-color: #999;
+}
+#reqForm label, #reqForm input, #reqForm p {
+  margin-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+#reqForm #cNum {
+  margin-bottom: 1.5rem;
+}
+#reqForm .radio-label {
+  margin-left: 0.5rem;
+}
+#reqForm select {
+  width: 45%;
+  margin-top: 1.5rem;
+  background-color: #999;
+  color: #fff;
+}
+#reqForm textarea {
+  width: 50%;
+  margin-bottom: 1.5rem;
+  background-color: #999;
+  color: #fff;
+}
+#reqForm #formFileSm {
+  width: 80%;
+  margin-bottom: 2.5rem;
+  background-color: #999;
+  color: #fff;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #cccccc;
+  padding: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-top: 1.5rem;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  margin-left: 0.5rem;
+  padding-top: 1.2rem;
+}
+
+button {
+  width: 35%;
+  margin-top: 0.5rem;
+}
+button:first-of-type {
+  margin-left: 4rem;
+}/*# sourceMappingURL=style.css.map */
