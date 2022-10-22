@@ -1,0 +1,151 @@
+/* - can nest classes in scss file */
+
+/* form */
+#login{
+    background-color: $primary-color;
+    width: 35%;
+    height: 460px;
+    margin: $formSpace;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include border-radius(5px); /* using the mixins function */
+    
+    .form-content{
+        margin-left: $formSpace;
+        margin-bottom: $spacing;
+        &:last-of-type{
+         margin-bottom: $sm;
+        }
+    }
+    
+    .input-group:last-of-type{
+        margin-bottom: 0;
+    }
+    
+    .input-group-text{
+        z-index: 1;
+        width: 11%;  
+    }
+
+    .lock{
+        width: 15px;
+        height: 15px;
+        align-items: center;
+        margin: 3px;
+    }
+
+    input{
+        background-color: $dark;
+        border: none;
+        @include border-radius(0 5px 5px 0);
+        width: 67%;
+    }
+
+    .link{
+        color: $dark;
+        text-decoration: none;
+        text-align: end;
+        margin-right: 4.2rem;
+        margin-top: -15px;
+        font-size: $font-sm;
+        &:hover {
+        color: $link;
+        }
+    }
+
+    hr{
+        display: block;
+        content: "";
+        height: 1px;    
+        position: absolute;
+        width: 27%;
+        margin-left: $formSpace;
+        margin-top: $spacing;      
+        z-index: 1;
+        border: 0;
+        background-color: $dark;
+        justify-content: center;
+    }
+
+    h2{
+        font-size: $font-sm;
+        margin-top: $formSpace;
+    }
+
+    .alt{
+        width: 30px;
+        height: auto;
+        position: fixed;
+        margin-right: $sm;
+        &:hover{
+            width: 35px;
+        } 
+    }
+    
+    #alt-fb{
+        left: 45%;
+        top: 74%;
+    }
+
+    #alt-twt{
+        left: 49%;
+        top: 74%;
+    }
+
+    #alt-gg{
+        left: 53%;
+        top: 74%;
+    }
+}
+
+#reqForm{
+    background-color: $primary-color;
+    width: 55%;
+    height: auto;
+    margin: $formSpace;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include border-radius(5px); /* using the mixins function */
+
+    .container{
+        padding: 0 $spacing;
+    }
+
+    .in-container, .txt-space{
+        width: 75%;
+        border: none;
+        background-color: $dark;
+    }
+
+    label, input,p{
+        margin-left: $formSpace;
+        margin-bottom: $sm;
+    }
+  
+    #cNum{
+        margin-bottom: $spacing;
+    }
+
+    .radio-label{
+        margin-left: $sm;
+    }
+
+    select{
+        width: 45%;
+        margin-top: $spacing;
+        background-color: $dark;
+        color: $light;
+    }
+
+    textarea{
+        width: 50%;
+        margin-bottom: $spacing;
+        background-color: $dark;
+        color: $light;
+    }
+
+    #formFileSm{
+        width: 80%;
+        margin-bottom: $formSpace;
+        background-color: $dark;
+        color: $light;
+    }
+}
