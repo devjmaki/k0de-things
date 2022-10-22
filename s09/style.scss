@@ -1,9 +1,0 @@
-@mixin colors ($colors: lightpink)
-{
-    background-color: $colors;
-    border: 3px;
-}
-
-.table{
-    @include colors;
-}
