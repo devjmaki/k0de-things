@@ -1,0 +1,43 @@
+
+@import 'variables';
+@import 'mixins';
+@import 'form';
+
+body {
+    font-family: $karla; 
+    background-color: $primary-color;
+    padding: $spacing;
+    min-height: 100vh;
+    @include flex-center(); 
+}
+
+header{
+    margin-top: $spacing;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: $formSpace;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+    margin-top: $spacing;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+h1{
+    font-family: $kanit;
+    position: absolute;
+    margin-left: $sm;
+    padding-top: 1.2rem;
+}
+
+button{
+    width: 35%;
+    margin-top: $sm;
+    &:first-of-type{
+        margin-left: 4rem;
+    }
+}
