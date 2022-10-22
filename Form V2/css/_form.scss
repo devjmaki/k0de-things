@@ -2,11 +2,10 @@
 
 // login form
 #login{
-    background-color: $primary;
     width: 35%;
     height: 460px;
     margin: $formSpace;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include theme;
     @include border-radius(5px); 
     
     .form-content{
@@ -98,12 +97,11 @@
 }
 
 // request form
-#reqForm{
-    background-color: $primary;
+#reqForm{  
     width: 55%;
     height: auto;
     margin: $formSpace;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include shadow;
     @include border-radius(5px);
 
     .container{

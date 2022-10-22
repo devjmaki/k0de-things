@@ -9,3 +9,10 @@
     -moz-border-radius: $radius;
     border-radius: $radius;
 }
+
+
+@mixin theme ($theme:rgb(0, 0, 0))
+{
+    background-color: $primary;
+    box-shadow: 0 4px 8px 0 rgba($theme, 0.2), 0 6px 20px 0 rgba($theme, 0.19);
+}
