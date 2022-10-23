@@ -7,15 +7,15 @@ $karla: 'Karla', sans-serif;
 $kanit: 'Kanit', sans-serif;
 
 // color var
-$primary: #cccccc;
-$light: #fff;
-$dark: #999;
-$link: rgb(0, 0, 0);
+$primary-color: #cccccc;
+$accent-color: #fff;
+$secondary-color: #999;
+$hover-color: rgb(0, 0, 0);
 
 // spacing var
-$sm: 0.5rem;
-$spacing: 1.5rem;
-$formSpace: 2.5rem;
+$spacer-sm: 0.5rem;
+$spacer-m: 1.5rem;
+$spacer-l: 2.5rem;
 
 // font size var
-$font-sm: 0.8rem;
+$font-size-sm: 0.8rem;
