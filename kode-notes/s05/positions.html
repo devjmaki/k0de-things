@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pposition and Layout</title>
+
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <h1> Sentence Examples</h1>
+
+    <h2>Sentence Positions</h2>
+
+    <p class="staticPos"> <!-- default -->
+        The quick brown fox is a fox. 
+    </p>
+
+    <h2>Relative Position</h2>
+
+    <p class="relativePos">
+        The quick brown fox is brown.
+    </p>
+
+    <h2>Absolute Position</h2> <!-- doesnt keep the natural flow of web page -->
+    <div>
+        <p class="relativePos"> The quick brown fox is not cute.</p>
+        
+        <div>
+            <p class="absolutePos">
+                The quick brown fox is cute.
+            </p>
+        </div>
+    </div>
+
+    <h2>Fixed Position</h2>
+    <p class="fixedPos">
+        The quick brown fox is quick.
+    </p>
+
+    <h2>Sticky Position</h2>
+    <p class="stickyPos">
+        The quick brown fox is quick.
+    </p>
+
+    <h1>Playing with Snoopy</h1>
+
+    <p>
+        <h2>Static Position</h2>
+        <img class="staticPos" src="snoopy.png"/>
+    </p>
+
+    <p>
+        <h2>Relative Position</h2>
+        <img class="relativePos" src="snoopy.png"/>
+    </p>
+
+    <p>
+        <h2>Fixed Position</h2>
+        <img class="snoopyFixed" src="snoopy.png"/>
+    </p>
+
+    <p>
+        <h2>Another Fixed Position</h2>
+        <button class="click" onClick="tada()"> Click Me! </button>
+    </p>
+
+    <!-- script tags at the top of body closing tag -->
+    <script>
+        function tada()
+        {
+            alert("Tada");
+        }
+    </script>
+</body>
+</html>
