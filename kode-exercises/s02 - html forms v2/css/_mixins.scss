@@ -1,0 +1,18 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+@mixin theme ($theme:rgb(0, 0, 0))
+{
+    background-color: $primary-color;
+    box-shadow: 0 4px 8px 0 rgba($theme, 0.2), 0 6px 20px 0 rgba($theme, 0.19);
+}

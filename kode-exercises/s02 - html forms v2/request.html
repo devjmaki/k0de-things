@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Request | ABC Company</title>
+
+    <link rel="shortcut icon" href="./img/plugin.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="reqForm">
+        <header>
+            <img src="./img/plugin.png" class="logo">
+            <h1>IT Support Request Form</h1>
+        </header> 
+
+        <div class="container">
+            <!-- name field -->
+            <label for="fName" class="form-label d-block">First Name</label>
+            <input type="text" class="in-container form-control-sm d-block" id="fName" required>
+
+            <label for="lName" class="form-label d-block">Last Name</label>
+            <input type="text" class="in-container form-control-sm d-block" id="lName" required>
+
+            <!-- email address field -->
+            <label for="emailAdd" class="form-label d-block">Email Address</label>
+            <input type="email" class="in-container form-control-sm d-block" id="emailAdd" required>
+
+
+            <!-- contact number field -->
+            <label for="cNum" class="form-label d-block">Contact Number</label>
+            <input type="text" class="in-container form-control-sm d-block" id="cNum" placeholder="Enter complete phone number with extension" required>
+            
+            <!-- radio button -->
+            <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" name="employeeType" id="employeeType" value="onsite">
+                <label class="custom-control-label radio-label" for="employeeType">
+                    Onsite
+                </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" name="employeeType" id="employeeType" value="wfh">
+                <label class="custom-control-label radio-label" for="employeeType">
+                    Work from Home
+                </label>
+            </div>
+
+            <p> Location: <br>
+                For onsite, please state your Workstation No., Department, Floor and Building.<br>
+                For work from home, please complete your address and include a landmark <br> nearest to your location.
+            </p>
+            <input class="txt-space" type="text" size="60">
+
+            <!-- select -->
+            <label for="reqType">Service Request Type:</label>
+            <select class="form-select form-select-sm d-inline-block" size="8" id="reqType" aria-label=".form-select-sm example">
+                <option value="desklapSetup">Desktop/Laptop Setup</option>
+                <option value="desklapSupport">Desktop/Laptop Support</option>
+                <option value="desklapMaintenance">Desktop/Laptop Maintenance</option>
+                <option value="softwareInstallation">Software Installation</option>
+                <option value="softwareSupport">Software Support</option>
+                <option value="compperipheralSetup">Computer Peripheral Setup</option>
+                <option value="compperipheralTroubleshooting">Computer Peripheral Troubleshooting</option>
+                <option value="compperipheralMaintenance">Computer Peripheral Maintenance</option>
+            </select>
+
+            <p> Request Description: <br>
+                <textarea class="form-control" placeholder="Explain your service request as details as possible" id="reqDescription" cols="15" rows="3"></textarea>
+            </p>
+
+            <label for="formFileSm" class="form-label">Upload a picture/screenshot for reference.</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+
+            <button type="submit" class="mb-5 d-inline btn btn-sm btn-outline-dark">Login</button>
+            <button type="reset" class="mb-5 d-inline btn btn-sm btn-outline-dark">Reset</button>
+        </div> 
+    </form>
+</body>
+</html>

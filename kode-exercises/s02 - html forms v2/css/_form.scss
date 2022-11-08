@@ -1,0 +1,148 @@
+// login form
+#login{
+    width: 35%;
+    height: 460px;
+    margin: $spacer-l;
+    @include theme;
+    @include border-radius(5px); 
+    
+    .form-content{
+        margin-left: $spacer-l;
+        margin-bottom: $spacer-m;
+        &:last-of-type{
+         margin-bottom: $spacer-sm;
+        }
+    }
+    
+    .input-group:last-of-type{
+        margin-bottom: 0;
+    }
+    
+    .input-group-text{
+        z-index: 1;
+        width: 11%;  
+    }
+
+    .lock{
+        width: 15px;
+        height: 15px;
+        align-items: center;
+        margin: 3px;
+    }
+
+    input{
+        background-color: $secondary-color;
+        border: none;
+        @include border-radius(0 5px 5px 0);
+        width: 67%;
+    }
+
+    .link{
+        color: $secondary-color;
+        text-decoration: none;
+        text-align: end;
+        margin-right: 4.2rem;
+        margin-top: -15px;
+        font-size: $font-size-sm;
+        &:hover {
+        color: $hover-color;
+        }
+    }
+
+    hr{
+        display: block;
+        content: "";
+        height: 1px;    
+        position: absolute;
+        width: 27%;
+        margin-left: $spacer-l;
+        margin-top: $spacing;      
+        z-index: 1;
+        border: 0;
+        background-color: $secondary-color;
+        justify-content: center;
+    }
+
+    h2{
+        font-size: $font-size-sm;
+        margin-top: $spacer-l;
+    }
+
+    .alt{
+        width: 30px;
+        height: auto;
+        position: fixed;
+        margin-right: $spacer-sm;
+        &:hover{
+            width: 35px;
+        } 
+    }
+    
+    #alt-fb{
+        left: 45%;
+        top: 74%;
+    }
+
+    #alt-twt{
+        left: 49%;
+        top: 74%;
+    }
+
+    #alt-gg{
+        left: 53%;
+        top: 74%;
+    }
+}
+
+// request form
+#reqForm{  
+    width: 55%;
+    height: auto;
+    margin: $spacer-l;
+    @include shadow;
+    @include border-radius(5px);
+
+    .container{
+        padding: 0 $spacer-m;
+    }
+
+    .in-container, .txt-space{
+        width: 75%;
+        border: none;
+        background-color: $secondary-color;
+    }
+
+    label, input,p{
+        margin-left: $spacer-l;
+        margin-bottom: $spacer-sm;
+    }
+  
+    #cNum{
+        margin-bottom: $spacer-m;
+    }
+
+    .radio-label{
+        margin-left: $spacer-sm;
+    }
+
+    select{
+        width: 45%;
+        margin-top: $spacer-m;
+        background-color: $secondary-color;
+        color: $accent-color;
+    }
+
+    textarea{
+        width: 50%;
+        margin-bottom: $spacer-m;
+        background-color: $secondary-color;
+        color: $accent-color;
+    }
+
+    #formFileSm{
+        width: 80%;
+        margin-bottom: $spacer-l;
+        background-color: $secondary-color;
+        color: $accent-color;
+    }
+}
