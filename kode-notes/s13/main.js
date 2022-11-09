@@ -113,184 +113,190 @@ console.log(s %= 8);
 // output = 4;
 
 
-// Companion Operators
-// compares two operands and returns a logical value (true or false)
+//Compound Assignment Operator
+// shorthand for arithmetic and assignment operation.
+//performs mathematical operation then assigning the result back to the variable.
 
-// < - less than
-// > - greater than
+/*
+Long method:
+let j = 15;
+console.log(j+3);//18
+console.log(j); //15
+*/
 
-// Equality Operator (==) aka "Loose Equality"
-// compares the same value regardless of data type because of coercion
+//Addition Assignment Operator (+=)
+let i = 15;
 
-console.log("Jan" == "Jen");
-console.log(true == true);
-// true
+console.log(i += 3);//18- adds the number in the initial value
+console.log(i);//18
 
-console.log(false == true);
-// false
+//Subtraction Assignment Operators (-=)
+console.log(i -= 10);//8
 
-console.log(true==false);
-// false
+//Multiplication Assignment Operator (*=)
+console.log(i *= 15); //120
+//i = 8
+// 8*15 = 120
 
-console.log(false==false);
-// true
+//Division Assignment Operator (/=)
+console.log(i /= 2); //60
+//i = 120 based on above
+// 120/2 = 60
 
-console.log(null==undefined);
-// true
+//Modulus Assignment Operator (%=)
+console.log(i %= 8); //remainder is 4
 
-console.log('20'==20);
-// true
+//Companion Operators
+//compares two operands and returns a logical value (true or false)
 
+/*
+    < = less than
+    > = greater than
+*/
 
-// BINARY NUMBERS
-// 1 = TRUE 0 = FALSE
-console.log(true==1);
-// true
+//Equality Operator (==) a.k.a "Loose Equality"
+//compares the same value regardless of data type because of coercion.
 
-console.log(true==2);
-// false
+console.log("Jan" == "Jan");//true
+console.log(true==true);//true
+console.log(false==true); //false
+console.log(true==false);//false
+console.log(false==false);//true - same value
+console.log(null==undefined);//true
 
-console.log(false==0);
-// true
+console.log("20"==20);//true because of coercion
 
-console.log(false==1);
-// false
+/*
+    Binary Numbers
+    1 = true
+    0 - false
+ */
+console.log(true==1);//true
+console.log(true==2);//false
+console.log(false==0);//true
+console.log(false==1); //false
 
-console.log(4.00 == 4);
-// true
+console.log(4.00 == 4); //true
 
-// parseInt() - convert into whole number
-// parseFloat() - used for decimal number
+//Type Coercion - automatic/implicit conversion of values from one data type to another.
 
-let mj = 75.68;
-console.log(parseInt("75.68"));
+//parseInt() - converted into whole numbers
+//parseFloat() - used for decimal numbers
+
+let ex = 75.68;
+console.log(parseInt("75.68")); 
 console.log(parseFloat("75.68"));
 
 console.log(parseInt("75.68").toFixed(2));
-// toFixed(2) - displays 2 decimal places
+//.toFixed(2) - displays decimal places
+console.log(parseFloat(ex.toFixed(3)));
 
-console.log(parseFloat(mj.toFixed(3)));
+//Strict Equality Operator (===)
+//doesn't practice coercion
+//compares "sameness of value" and data type
 
-// Strict Equality Operator (===)
-// doesnt practice coercion; compares "somenss of value" and data type
+console.log(1 === 1); //true
+console.log(5 === "5");//false
+console.log(true === 1); //false
+console.log(null === undefined); //false
+console.log("James" === "Daniel"); //false - samesness of value is practiced in Strict Equality Operator
+console.log(true === true); //true
+console.log(false === false); //true
 
-console.log(1===1); //true
-console.log(5==="5"); //false
-console.log(true===1); //false
-console.log(null===undefined); //false
-console.log("Makie"==="Marco"); //false
+//Inequality Operator (!=)
+//a.k.a Loose Inequality Operator
+//compares difference of values regardless of data types
+//coercion will take place
 
-console.log(true===true); //true
-console.log(false===false); //true
+console.log( false != true); //true
+console.log( 3 != 3.00); //false
+console.log(null != undefined); //true
+console.log(true != 1); //false
 
-// Inequality Operators (!=)
-// Loose Inequality Operator
-// compares if values are different
-// coercion works
+//Strict Inequality Operator(!==)
+//data type and difference of values
 
-console.log(false != true);
-// true
+console.log(false !== true); //true
+console.log (4 !== 4.00) //false
+console.log(null !== undefined); //true
+console.log(true !== 1); //true
 
-console.log(3 != 3.00);
-// false
+//Greater Than (>)
+console.log(100>75); //true
+console.log(70>180); //false
 
-console.log(null != undefined);
-// false
+//Less Than (<)
+console.log(45<50); //true
+console.log(67<45); //false
 
-console.log(true != 1);
-// false
+//Greater Than or Equal to (>=)
+console.log(45 >= 45);//true
+console.log(44 >= 45);//false
 
+//Less Than or Equal to (<=)
+console.log(100 <= 100);//true
+console.log(1 <= 0.5);//false
 
-// STRICT INEQUALITY OPERATOR (!==)
+//Logical Operators
+    //AND (&&) Operator - when there is false in the statement it set as false
 
-console.log(false !== true);
-// true
+console.log( true && true); //true
+console.log( true && false);  //false
+console.log( false && true); //false
+console.log( false && false);  //false
 
-console.log(4 !== 4.00);
-// false
+console.log(("Max" == "Max") && (undefined == null)); //true
 
-console.log(null !== undefined);
-// true
+let kei = true;
+console.log (kei > 2 && kei < 2); //false
 
-console.log(true !== 1);
-// true
+let isOnline = true;
+let isBoss = false;
+let chatSiBoss = isOnline && isBoss;
+console.log(chatSiBoss); //false
 
+//best practice to declare a boolean use the word "is" before the given word
 
-// GREATER THAN (>)
-console.log(100>75);
-// true
+//OR Operator (||)
+//evaluates to true of either of the operand is true
+//if both operands are false the result is false.
 
-console.log(70>180);
-// false
+console.log( true || true);
+console.log( true || false); 
+console.log( false || true); //true
+console.log( false || false);  //false
 
+//NOT Operator - kabaligtaran
+console.log(!true); //false
+console.log(!false); //true
 
-// LESS THAN (<)
-console.log(45<50);
-// true
+let isAdmin = true;
+let isInstructor = "1";
+let isAnswer = !isAdmin === isInstructor;
+console.log(isAnswer); //false
 
-console.log(67<45);
-// false
+let faveNum = 333;
+let chooseNum = 245;
+let isHigher = !(chooseNum > faveNum || faveNum >= chooseNum);
+console.log(isHigher); //false
 
-
-// GREATER THAN OR EQUAL TO (>=)
-console.log(45>=45);
-// true
-
-console.log(44 >= 45);
-// false
-
-
-// LESS THAN OR EQUAL TO (<=)
-console.log(100 <= "100");
-// true
-
-console.log(1 < 0.5);
-// false
-
-
-// LOGICAL OPERATORS
-
-// AND OPERATORS (&&)
-// when there is false in statements it set as false
-console.log(true && true);
-// true
-
-console.log(true && false);
-// false
-
-console.log(false && true);
-// false
-
-console.log(false && false);
-// false
-
-console.log(("Max && Max") && (undefined == null));
-// true
-
-console.log(("Max && Max") && (undefined === null));
-// false
-
-let gem = true;
-console.log(gem > 2 && gem < 2);
-// false
-
-let isCoffee = true
-let isReady = false
-let drinkCoffee = isCoffee && isReady
-console.log(drinkCoffee);
-
-
-let isTrue = true;
-let isFalse = false;
-
-let isTralse = !(!isFalse != !isFalse && isFalse !== isTrue || (!isTrue != !isFalse && isFalse != !isTrue));
-
-isTralse = !(true != true && false !== true || (false != true && false != false));
-
-isTralse = !(false && true || (true && false));
-
-isTralse = !(false || false);
-
-isTralse = !(false);
-
-isTralse = true
+/*
+    let isTrue = true;
+    let isFalse = false;
+    let isTralse = !(!isFalse != !isFalse && isFalse !== isTrue || (!isTrue != !isFalse && isFalse != !isTrue));
+    (!isFalse != !isFalse && isFalse !== isTrue 
+     T != T && F
+     F   
+        
+        
+    || (!isTrue != !isFalse && isFalse != !isTrue))
+    ||
+        F != T && F != T
+        F != F && F
+        F != F
+    
+    F
+    !(F||F)
+    !(F)
+    = true
+*/
