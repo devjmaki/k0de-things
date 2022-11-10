@@ -270,10 +270,10 @@ console.log( false || false);  //false
 console.log(!true); //false
 console.log(!false); //true
 
-let isAdmin = true;
-let isInstructor = "1";
-let isAnswer = !isAdmin === isInstructor;
-console.log(isAnswer); //false
+let isCoffee = true;
+let isReady = "1";
+let drinkCoffee = !isCoffee === isReady;
+console.log(drinkCoffee); //false
 
 let faveNum = 333;
 let chooseNum = 245;
