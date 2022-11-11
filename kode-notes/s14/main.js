@@ -232,3 +232,46 @@ function inputColor (color) {
 }
 
 inputColor(color);
+
+let name = "Jelly Lumactud";
+console.log(name.length); //14
+//counts the number of characters that includes the spaces.
+
+//Arrays and Objects
+let numbers = [1,54,58,60,75,90,99]; //7
+console.log(numbers.length);
+//it displays the number of elements inside the array.
+
+//Objects inside the Array
+
+let grades = [
+    {first: 90},
+    {second: 92},
+    {third: 75},
+    {fourth: 74}
+];
+
+console.log(grades.length);
+//It counts the properties inside the object.
+//properties are also known as "key value pair"
+
+if (numbers.length == 7 && grades.length >= 4) {
+    console.log("From our Codeblock")
+}
+else {
+    console.log("hindi siya belong. outcast siya");
+}
+
+//BONUS: Ternary operator
+
+/*
+TERNARY OPERATOR
+? - if
+: - else
+    condition ? <statement>
+    :statement
+*/
+
+let legalAge = 25;
+(legalAge >= 18 && legalAge <= 59)?console.log("legal pero hindi senior")
+:console.log("minor pa po siya");
