@@ -13,18 +13,10 @@ class userWeight{
 //Step 2: Instantiate an object using new keyword
 
 const jellyWeight = new userWeight("Jelly", 59.87, 132);
-console.log(jellyWeight);
 
 jellyWeight.name = "Jelly";
 jellyWeight.kilograms = 59.87;
 jellyWeight.pounds = 132;
-
-const pikachuWeight = new userWeight("Pikachu", 6, 13);
-console.log(pikachuWeight);
-
-pikachuWeight.name = "Pikachu";
-pikachuWeight.kilograms = 6;
-pikachuWeight.pounds = 13;
 
 // // create a function converting kg to lbs
 
