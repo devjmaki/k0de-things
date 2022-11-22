@@ -1,129 +1,42 @@
 console.log("Hello!");
 
-let firstName = "Stewie";
+let firstName = "Stewart";
 let lastName = "Griffin";
 let age = 2;
-let hobbies = ["Building Machine", "Acting", "Playing Tennis", "Time Traveling"];
-let workAddress = {
+const hobbies = ["Building Machine", "Acting", "Playing Tennis", "Time Traveling"];
+const address = {
     houseNumber: "31",
     street: "Spooner Street",
     city: "Quahog",
     state: "Rhode Island"
 };
 
+const hobby = hobbies.join(', ');
+const workAddress = address.houseNumber + " " + address.street + ", " + address.city + ", " + address.state;
+
 console.log(`First Name: ${firstName}`);
 console.log(`Last Name: ${lastName}`);
 console.log(`Age: ${age} years old`);
-console.log(`Hobbies: ${hobbies}`);
-console.log(`Work Address: `);
-console.log(workAddress);
+console.log(`Hobbies: ${hobbies.join(', ')}`);
+console.log(`Work Address: ${workAddress} `);
 
-//Create a function that will accept the first name, last name and age as arguments and print those details in the console as a single string. This function will also print the hobbies and work address.
+console.log(`************************`);
 
-function printUserInfo (fn, ln, Age) {
-                        //parameters
-    console.log(`My name is ${fn} ${ln}, ${Age} years of age`);
 
-    console.log(`This was printed inside of a function: `);
+function userData (nName, fName, lName, age) {
+    console.log(`Ola, I'm ${fName} ${lName[0]}, ${age} years of age. You may call me ${nName}.`);
+
+    console.log(`This was printed inside of a function:`);
     console.log(hobbies);
 
     console.log(`This was printed inside of a function: `);
-    console.log(workAddress);
+    console.log(address);
 }
+userData('Stewie', 'Stewart', 'Griffin', 2);
 
-//invoke the function and provide arguments
-printUserInfo("Jelly", "Lumactud", "20");
-
-//Create another function that will return a value and store it in a variable.
 function returnValue() {
-    return true;
-    //The return statement stops the execution of a function and returns a value.
+    return false;
 }
-
-// console.log(returnValue);
 
 let isMarried = returnValue();
-
-console.log(`The value of isMarrried is: ${isMarried}`);
-
-//Part 2 - Nested IFs
-/*
-    Username: student@mail.com
-    Password: discovery
-*/
-
-// let login_attempts = 3;
-
-// let uname = prompt ("Enter a username or email");
-// let pass = prompt ("Enter a password");
-
-// function login (uname, pass){
-//     if (uname == "student@mail.com" && pass == "discovery")
-//     {
-//         alert ("Successfully Login");
-//     }
-
-//     else {
-//         login_attempts = login_attempts - 1;
-
-//         alert ("Login Failed Now Only"+login_attempts+"Login Attempts Available");
-
-//         let uname = prompt ("Enter a username or email");
-//         let pass = prompt ("Enter a password");
-
-//         if (uname == "student@mail.com" && pass == "discovery")
-//         {
-//             alert ("Successfully Login");
-//         }
-
-//         else {
-//             login_attempts = login_attempts - 1;
-
-//             alert ("Login Failed Now Only"+login_attempts+"Login Attempts Available");
-
-//             let uname = prompt ("Enter a username or email");
-//             let pass = prompt ("Enter a password");
-
-//             if (uname == "student@mail.com" && pass == "discovery")
-//             {
-//                 alert ("Successfully Login");
-//             }
-
-//             else {
-//                 login_attempts = login_attempts - 1;
-
-//                 alert ("Login Failed Now Only"+login_attempts+"Login Attempts Available");
-//             }
-//         }
-//     }
-// }
-
-// login (uname, pass);
-
-//Part 3 - Using Loop
-/*
-    Username: student@mail.com
-    Password: discovery
-*/
-
-// let i = 3;
-// while (i != 0)
-// {
-//     let userName = "student@mail.com"
-//     let uname = prompt ("Enter a username or email");
-
-//     let userPassword = "discovery";
-//     let pass = prompt ("Enter a password");
-
-//     if (userName == uname && userPassword == pass)
-//     {
-//         i = 4 - i;
-//         alert ("Successfully Login");
-//         break;
-//     }
-
-//     else {
-//         i = i-1;
-//         alert ("Login Failed Now Only"+i+"Login Attempts Available");
-//     }
-// }
+console.log(`The value of isMarrried is ${isMarried}. ${firstName} is too young for marriage.`);
