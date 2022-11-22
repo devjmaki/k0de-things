@@ -1,27 +1,20 @@
-//PART 1
+console.log("Hello!");
 
-
-//Use an external JS file and ensure that it is connected to index.html
-console.log("connected");
-
-//Create multiple variables that will store the different JavaScript data types containing information relating to user details.
-let firstName = "John";
-console.log(`First Name: ${firstName}`);
-
-let lastName = "Smith";
-let age = 30;
-let hobbies = ["Biking", "Mountain", "Climbing", "Swimming"];
+let firstName = "Stewie";
+let lastName = "Griffin";
+let age = 2;
+let hobbies = ["Building Machine", "Acting", "Playing Tennis", "Time Traveling"];
 let workAddress = {
-    houseNumber: "32",
-    street: "Washington",
-    city: "Lincoln",
-    state: "Nebraska"
+    houseNumber: "31",
+    street: "Spooner Street",
+    city: "Quahog",
+    state: "Rhode Island"
 };
 
+console.log(`First Name: ${firstName}`);
 console.log(`Last Name: ${lastName}`);
-console.log(`Age: ${age}`);
-console.log(`Hobbies: `);
-console.log(hobbies);
+console.log(`Age: ${age} years old`);
+console.log(`Hobbies: ${hobbies}`);
 console.log(`Work Address: `);
 console.log(workAddress);
 
@@ -113,24 +106,24 @@ console.log(`The value of isMarrried is: ${isMarried}`);
     Password: discovery
 */
 
-let i = 3;
-while (i != 0)
-{
-    let userName = "student@mail.com"
-    let uname = prompt ("Enter a username or email");
+// let i = 3;
+// while (i != 0)
+// {
+//     let userName = "student@mail.com"
+//     let uname = prompt ("Enter a username or email");
 
-    let userPassword = "discovery";
-    let pass = prompt ("Enter a password");
+//     let userPassword = "discovery";
+//     let pass = prompt ("Enter a password");
 
-    if (userName == uname && userPassword == pass)
-    {
-        i = 4 - i;
-        alert ("Successfully Login");
-        break;
-    }
+//     if (userName == uname && userPassword == pass)
+//     {
+//         i = 4 - i;
+//         alert ("Successfully Login");
+//         break;
+//     }
 
-    else {
-        i = i-1;
-        alert ("Login Failed Now Only"+i+"Login Attempts Available");
-    }
-}
+//     else {
+//         i = i-1;
+//         alert ("Login Failed Now Only"+i+"Login Attempts Available");
+//     }
+// }
