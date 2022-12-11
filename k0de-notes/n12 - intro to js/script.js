@@ -86,3 +86,67 @@ console.log($_year);
 let state = `Washington`;
 console.log (state);
 //backticks are working but for Strings only
+
+//object 
+const guy = {
+    //property: value
+    //key value pair
+
+    name: "Peter Griffin", //str
+    age: 43, //num
+    address: "Spooner Street, Rhode Island",
+    isFunny: true, //boolean
+    spouse: "Lois Griffin",
+    children: [ "Meg", "Chris", "Steward"] //array
+};
+console.log(guy);
+console.log(guy.name);
+console.log(guy.children[2]);
+
+//array
+const carBrands = [ "Honda", "Jeep", "Lexus", "Subuwu", "Range Rover"];
+console.log(carBrands);
+console.log(carBrands.length);
+
+//exercise
+const fruits = [ "apples","oranges","bananas","grapes","strawberry"];
+console.log(fruits[2]);
+console.log(fruits.length);
+console.log(`Family Guy characters: ${guy.name}, ${guy.spouse}, and their children ${guy.children.join(', ')}`);
+
+/*
+function
+    function declaration:
+        function keyword
+        function name and parenthesis -> holds params
+        { } -> determine the block of codes, statements are written inside
+*/
+
+function greet(fName, lName, greeting = "Hello"){
+    //greeting -> funcName
+    //(fName) -> params/args/properties/attributes
+    //params - named variables passed into a function/imports args into function
+
+    console.log(`${greeting}, ${fName} ${lName}!`);
+};
+greet("Jem","Makie");
+
+//return 
+function product(m,j){
+    console.log("Product:");
+    return m * j; //stops execution of a function
+}
+console.log(product(1,9));
+
+//exercise
+//compute ave of three numbers
+function average (a,b,c){
+    return (a + b + c )/ 3;
+}
+console.log(average(3,3,3));
+
+//arrow function with parens around params
+const ave = (a,b,c) => {
+    return (a + b + c )/ 3;
+}
+console.log(ave(5,5,5));
