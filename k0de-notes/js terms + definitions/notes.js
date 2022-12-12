@@ -72,10 +72,20 @@ elements
 function
 - stores a piece of code that does a single task inside a defined block and then call the code whenever it is needed using a single short command - rather than having to type out the same code multiple times 
 - syntax:
-    function funcName (params){
-        block of code
-        console.log/return
-    }
-    funcName(); -> invoke function
+function funcName (params){
+     block of code
+    console.log/return
+}
+funcName(); -> invoke function
+
+
+
+JS OPERATORS
+- symbols used to manipulate values or operands 
+
+
+
+
+
 
 */
