@@ -250,10 +250,10 @@ console.log(("Max" == "Max") && (undefined == null)); //true
 let kei = true;
 console.log (kei > 2 && kei < 2); //false
 
-let isOnline = true;
-let isBoss = false;
-let chatSiBoss = isOnline && isBoss;
-console.log(chatSiBoss); //false
+let isSleepy = true;
+let isDoneStudying = false;
+let drinkCafe = isSleepy && isDoneStudying;
+console.log(drinkCafe); //false
 
 //best practice to declare a boolean use the word "is" before the given word
 
@@ -266,7 +266,7 @@ console.log( true || false);
 console.log( false || true); //true
 console.log( false || false);  //false
 
-//NOT Operator - kabaligtaran
+//NOT Operator - reverse
 console.log(!true); //false
 console.log(!false); //true
 
@@ -283,20 +283,22 @@ console.log(isHigher); //false
 /*
     let isTrue = true;
     let isFalse = false;
+
     let isTralse = !(!isFalse != !isFalse && isFalse !== isTrue || (!isTrue != !isFalse && isFalse != !isTrue));
-    (!isFalse != !isFalse && isFalse !== isTrue 
-     T != T && F
-     F   
-        
-        
-    || (!isTrue != !isFalse && isFalse != !isTrue))
-    ||
-        F != T && F != T
-        F != F && F
-        F != F
+
+    (!isFalse != !isFalse && isFalse !== isTrue
+        T     !=    T     &&    F    !==    T
+            F       &&     T
+                    F
     
-    F
-    !(F||F)
+    || 
+    
+    (!isTrue != !isFalse && isFalse != !isTrue))
+        F    !=   T      &&    F    !=    F
+            T       &&      F
+                    F
+    
+    ! ( F || F )
     !(F)
-    = true
+    = True
 */
