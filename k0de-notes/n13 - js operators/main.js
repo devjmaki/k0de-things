@@ -1,304 +1,268 @@
-// debugging purposes 
-console.log("hello, world"); 
+console.log("connected");
 
-// js operators - symbols used to manipulate values/operands/math+logical computations
+//If Statement
+// conditional branching statement
+// condition is true, a group of statement is executed
+// condition is false, the statement is skipped.
 
-// A. Assignment Operator - represents equal symbol =
-//  let - reassignable 
-let a = 14;
-a = 18;
-
-let b = a;
-console.log(b);
-// output = 18 
-
-// B. Arithmetic Operators - mathematical oprators on a numerical values/operands and returns a single numerical value (+)
-
-console.log(20+30); 
-// output = 50 
-// primitive data type - int, null, undefined, boolean 
-
-console.log("20"+"30");
-// output = 2030; 
-// string concatenation/concatenation - links/combines two strings together 
-
-// C. Subtraction - difference (-)
-console.log(20-10);
-// output = 10;
-
-console.log("50"-"10");
-// output = 40
-// Type Coercion - automatic/implicit conversion of values from one data to another. 
-
-let x = 50;
-let y = '30';
-let diff = x - y;
-console.log(diff); 
-// type coercion
-
-console.log("nine" - "one");
-// Nan - Not a Number
-
-//  D. Division (/)
-console.log(50/5);
-//  Number under primitive data type 
-
-console.log("50"/"5"); 
-// coercion
-
-console.log("fifty"/"five");
-// Nan
-
-//  E. Modulus Division (modulo - % );
-console.log(100%3);
-// output = 1; remainder
-
-
-// F. Increment (++) & Decrement (--)
-// operators first = arithmetic operation 
-let m = 30;
-console.log(++m);
-// output = 31; add 1
-
-console.log(m);
-// output = 31; displayed new value 
-
-console.log(--m);
-// output = 30;
-console.log(m);
-// output = 30;
-
-// operand comes first before operator, it displays the val of the operand before performing the arithmetic operation 
-
-console.log(m++);
-// output = 30
-console.log(m);
-// output = 31; current val
-
-console.log(m--);
-// output = 31
-console.log(m);
-//  output = 30;
-
-
-// Compound Assignment Operator - shortcut for arithmethic + assignment operations
-//  performs operation then assigns the result back to the variable 
 /*
-    long method:
-    let j = 15;
-    console.log(j+3);//18 
-    console.log(j); //15
+    Syntax:
+    if (condition)
+    {
+        statement 1
+        statement 2
+    }
 */
 
-// Addition Assignment Operator (+=)
-let s = 15;
-console.log(s += 3);
-// output = 18;
-console.log(s);
+// if (20 <= 30)
+// {
+//     console.log("You are not allowed to enter");
+// }
 
-// Subtraction Assignment Operator (-=)
-console.log(s -= 10);
-// output = 8
+// let age = prompt ("Enter your age");
 
-// Multiplication Assignment Operator (*=)
-console.log(s *= 15);
-// output = 120 
+// function getAge (age) {
 
-// Division Assignment Operator (/=)
-console.log(s /= 2);
-// output = 60
+//     if (age<=30) {
+//         console.log("You are not allowed to enter");
+//     }
 
-// Modulus Assignment Operator (%=)
-console.log(s %= 8);
-// output = 4;
+//     return (age);
+// }
 
+// getAge(age);
 
-//Compound Assignment Operator
-// shorthand for arithmetic and assignment operation.
-//performs mathematical operation then assigning the result back to the variable.
+//if-else statement
+// 2 way decision statement
+// it is used to make decisions and execute the command conditionally.
 
 /*
-Long method:
-let j = 15;
-console.log(j+3);//18
-console.log(j); //15
+    if (condition)
+    {
+        statement 1
+    }
+    else if (condition)
+    {
+        statement 2
+    }
+    else {
+        statement 3
+    }
 */
 
-//Addition Assignment Operator (+=)
-let i = 15;
-
-console.log(i += 3);//18- adds the number in the initial value
-console.log(i);//18
-
-//Subtraction Assignment Operators (-=)
-console.log(i -= 10);//8
-
-//Multiplication Assignment Operator (*=)
-console.log(i *= 15); //120
-//i = 8
-// 8*15 = 120
-
-//Division Assignment Operator (/=)
-console.log(i /= 2); //60
-//i = 120 based on above
-// 120/2 = 60
-
-//Modulus Assignment Operator (%=)
-console.log(i %= 8); //remainder is 4
-
-//Companion Operators
-//compares two operands and returns a logical value (true or false)
+// let myAge = 30;
+// if (myAge == "30")
+// {
+//     alert("hello from the code block");
+// }
+// else {
+//     console.log("haller from my block");
+// }
 
 /*
-    < = less than
-    > = greater than
+Exercise 1: If-Else Statement
+Assign a variable that lets the user input a height in centimeter. Ensure that the word centimeter is indicated for proper reference.
+Create an If-Else Statement using the following conditions:
+If the height is below 150cm, display "Did not pass the minimum height requirement“.
+If the height is above 150, display "Pass the minimum height requirement“.
+Put the conditional statement inside the function.
+Ensure that the proper NAMING STANDARD is followed.
 */
 
-//Equality Operator (==) a.k.a "Loose Equality"
-//compares the same value regardless of data type because of coercion.
+// let height = prompt ("Enter your height in cm");
 
-console.log("Jan" == "Jan");//true
-console.log(true==true);//true
-console.log(false==true); //false
-console.log(true==false);//false
-console.log(false==false);//true - same value
-console.log(null==undefined);//true
+// function humanHeight (height) {
+//     if (height >= 150)
+//     {
+//         console.log("Pass the minimum height requirements");
+//     }
+//     else {
+//         console.log("Did not pass the minimum height requirement");
+//     }
+// }
+// humanHeight(height);
 
-console.log("20"==20);//true because of coercion
+//Else if
+// 2 or more possible outcomes
 
-/*
-    Binary Numbers
-    1 = true
-    0 - false
- */
-console.log(true==1);//true
-console.log(true==2);//false
-console.log(false==0);//true
-console.log(false==1); //false
+// let price = prompt (`Price:`);
 
-console.log(4.00 == 4); //true
-
-//Type Coercion - automatic/implicit conversion of values from one data type to another.
-
-//parseInt() - converted into whole numbers
-//parseFloat() - used for decimal numbers
-
-let ex = 75.68;
-console.log(parseInt("75.68")); 
-console.log(parseFloat("75.68"));
-
-console.log(parseInt("75.68").toFixed(2));
-//.toFixed(2) - displays decimal places
-console.log(parseFloat(ex.toFixed(3)));
-
-//Strict Equality Operator (===)
-//doesn't practice coercion
-//compares "sameness of value" and data type
-
-console.log(1 === 1); //true
-console.log(5 === "5");//false
-console.log(true === 1); //false
-console.log(null === undefined); //false
-console.log("James" === "Daniel"); //false - samesness of value is practiced in Strict Equality Operator
-console.log(true === true); //true
-console.log(false === false); //true
-
-//Inequality Operator (!=)
-//a.k.a Loose Inequality Operator
-//compares difference of values regardless of data types
-//coercion will take place
-
-console.log( false != true); //true
-console.log( 3 != 3.00); //false
-console.log(null != undefined); //true
-console.log(true != 1); //false
-
-//Strict Inequality Operator(!==)
-//data type and difference of values
-
-console.log(false !== true); //true
-console.log (4 !== 4.00) //false
-console.log(null !== undefined); //true
-console.log(true !== 1); //true
-
-//Greater Than (>)
-console.log(100>75); //true
-console.log(70>180); //false
-
-//Less Than (<)
-console.log(45<50); //true
-console.log(67<45); //false
-
-//Greater Than or Equal to (>=)
-console.log(45 >= 45);//true
-console.log(44 >= 45);//false
-
-//Less Than or Equal to (<=)
-console.log(100 <= 100);//true
-console.log(1 <= 0.5);//false
-
-//Logical Operators
-    //AND (&&) Operator - when there is false in the statement it set as false
-
-console.log( true && true); //true
-console.log( true && false);  //false
-console.log( false && true); //false
-console.log( false && false);  //false
-
-console.log(("Max" == "Max") && (undefined == null)); //true
-
-let kei = true;
-console.log (kei > 2 && kei < 2); //false
-
-let isSleepy = true;
-let isDoneStudying = false;
-let drinkCafe = isSleepy && isDoneStudying;
-console.log(drinkCafe); //false
-
-//best practice to declare a boolean use the word "is" before the given word
-
-//OR Operator (||)
-//evaluates to true of either of the operand is true
-//if both operands are false the result is false.
-
-console.log( true || true);
-console.log( true || false); 
-console.log( false || true); //true
-console.log( false || false);  //false
-
-//NOT Operator - reverse
-console.log(!true); //false
-console.log(!false); //true
-
-let isCoffee = true;
-let isReady = "1";
-let drinkCoffee = !isCoffee === isReady;
-console.log(drinkCoffee); //false
-
-let faveNum = 333;
-let chooseNum = 245;
-let isHigher = !(chooseNum > faveNum || faveNum >= chooseNum);
-console.log(isHigher); //false
+// if (price<50) {
+//     console.log(`affordable`);
+// } else if (price <=75) {
+//     console.log (`pricey`);
+// } else if (price <= 90){
+//     console.log(`benta ko muna ang isang atay ko`);
+// } else {
+//     console.log(`out of the budget, puritang tunay`);
+// }
 
 /*
-    let isTrue = true;
-    let isFalse = false;
+Exercise 2: Else If Statement Enclosed in Function
+Determine the typhoon intensity with the following data:
+	Windspeed of 30, not a typhoon
+	61 tropical depression is detected
+	61-88 tropical storm is detected
+	89-117 severe tropical is detected
+	others, typhoon detected
+Put the conditional statement inside the function.
+Ensure that the proper NAMING STANDARD is followed.
+*/
 
-    let isTralse = !(!isFalse != !isFalse && isFalse !== isTrue || (!isTrue != !isFalse && isFalse != !isTrue));
+// let intensity = prompt ("Enter typhoon intensity");
 
-    (!isFalse != !isFalse && isFalse !== isTrue
-        T     !=    T     &&    F    !==    T
-            F       &&     T
-                    F
+// function tIntensity (intensity){
+//     if (intensity <=30) {
+//         console.log("not a typhoon");
+//     }else if (intensity <= 61)
+//     {
+//         console.log("Tropical Depression is detected");
+//     } else if ((intensity >= 61)&& (intensity <= 88))
+//     {
+//         console.log("Tropical Storm is detected");
+//     } else if ((intensity >= 89) && (intensity <= 117))
+//     {
+//         console.log("severe tropical is detected");
+//     } else {
+//         console.log("Typhoon Detected");
+//     }
+// }
+
+// tIntensity(intensity);
+
+//Switch Statement
+//it performs different actions on different conditions
+//compares the same expression to several different values.
+
+/*
+RULE OF THUMB:
+    YOU CAN USE THIS STATEMENT WHEN YOU ARE COMPARING A LIST OF VALUES AGAINST A SINGLE VARIABLE
+*/
+
+/*
+    SYNTAX:
+    switch (expression)
+    {
+        case condition 1:
+            statements
+            break;
+            - breaks out the switch block
+            - stops the execution inside the switch block.
+        case condition 2:
+            statements
+            break;
+        default:
+            - specifies the code tp run if there is no match
+            statement
+    }
+*/
+
+// let day = prompt ("Enter a number between 1 to 7");
+
+// switch (day)
+// {
+//     case (day = "1"):
+//     console.log("Monday");
+//     break;
+
+//     case (day = "2"):
+//     console.log("Tuesday");
+//     break;
+
+//     case (day = "3"):
+//     console.log("Wednesday");
+//     break;
+
+//     case (day = "4"):
+//     console.log("Thursday");
+//     break;
+
+//     case (day = "5"):
+//     console.log("Friday");
+//     break;
+
+//     case (day = "6"):
+//     console.log("Saturday");
+//     break;
+
+//     case (day = "7"):
+//     console.log("Sunday");
+//     break;
+
+//     default: 
+//     console.log ("Invalid number for the week");
+// }
+
+/*
+    Exercise 3: Switch Statement
     
-    || 
-    
-    (!isTrue != !isFalse && isFalse != !isTrue))
-        F    !=   T      &&    F    !=    F
-            T       &&      F
-                    F
-    
-    ! ( F || F )
-    !(F)
-    = True
+    Create a Switch Statement that accepts the colors: Black, Violet and Pink.
+    Lowercase and Uppercase letters must be accepted
+    Put the conditional statement inside the function.
+    Ensure that the proper NAMING STANDARD is followed.
 */
+let color = prompt ("Enter the color Black, Violet and Pink");
+
+function inputColor (color) {
+    switch (color) {
+        case (color = "Black"):
+            console.log("The color is " + color);
+            break;
+        case (color = "BLACK"):
+            console.log("The color is " + color);
+            break;       
+        case (color = "Pink"):
+            console.log("The color is " + color);
+            break;
+        case (color = "PINK"):
+            console.log("The color is " + color);
+                break;
+        case (color = "Violet"):
+            console.log("The color is " + color);
+            break;
+        case (color = "VIOLET"):
+            console.log("The color is " + color);
+                break;
+    
+        default:
+            console.log("Error: invalid color");
+            
+    }
+    
+}
+
+inputColor(color);
+
+let name = "Jelly Lumactud";
+console.log(name.length); //14
+//counts the number of characters that includes the spaces.
+
+//Arrays and Objects
+let numbers = [1,54,58,60,75,90,99]; //7
+console.log(numbers.length);
+//it displays the number of elements inside the array.
+
+//Objects inside the Array
+
+let grades = [
+    {first: 90},
+    {second: 92},
+    {third: 75},
+    {fourth: 74}
+];
+
+console.log(grades.length);
+//It counts the properties inside the object.
+//properties are also known as "key value pair"
+
+/*
+TERNARY OPERATOR
+? - if
+: - else
+    condition ? <statement>
+    :statement
+*/
+
+let legalAge = 25;
+(legalAge >= 18 && legalAge <= 59)?console.log("legal age but is not a senior")
+:console.log("minor");
