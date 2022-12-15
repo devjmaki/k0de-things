@@ -79,9 +79,18 @@ function funcName (params){
 funcName(); -> invoke function
 
 
-
 JS OPERATORS
 - symbols used to manipulate values or operands 
+
+
+Selection Control Structures
+- decision makers in js
+- performs different actions based on the value of an expression/statements
+
+Types:
+1. If Statement
+2. If-Else Statement
+3. Switch Statement
 
 
 
