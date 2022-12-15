@@ -230,11 +230,33 @@ function inputColor (color) {
     }
     
 }
-
 inputColor(color);
 
-let name = "Jelly Lumactud";
-console.log(name.length); //14
+function inputNum (num){
+    if(isNaN (num) || typeof parseInt (num) !== "number"){ 
+        return `Unexpected Input. Enter a number instead.`; 
+    } 
+         
+    else if (num === '') { 
+        return "Invalid input. Enter a number."; 
+    } 
+         
+    else { 
+         if (num % 2 == 0) 
+        { 
+            return ("Even Number"); 
+        } 
+        else { 
+            return ("Odd Number"); 
+    } 
+} 
+} 
+let userInput = parseInt(prompt("Enter a number"));
+console.log(inputNum(userInput));
+
+
+let name = "Joe Swanson";
+console.log(name.length);
 //counts the number of characters that includes the spaces.
 
 //Arrays and Objects
@@ -255,12 +277,6 @@ console.log(grades.length);
 //It counts the properties inside the object.
 //properties are also known as "key value pair"
 
-if (numbers.length == 7 && grades.length >= 4) {
-    console.log("From our Codeblock")
-}
-else {
-    console.log("hindi siya belong. outcast siya");
-}
 
 //BONUS: Ternary operator
 
@@ -270,8 +286,10 @@ TERNARY OPERATOR
 : - else
     condition ? <statement>
     :statement
-*/
 
+    
 let legalAge = 25;
-(legalAge >= 18 && legalAge <= 59)?console.log("legal pero hindi senior")
-:console.log("minor pa po siya");
+(legalAge >= 18 && legalAge <= 59)?console.log("legal but not senior")
+:console.log("minor");
+
+*/
