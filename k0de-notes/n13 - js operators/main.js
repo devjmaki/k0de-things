@@ -56,7 +56,7 @@ console.log("connected");
 //     alert("hello from the code block");
 // }
 // else {
-//     console.log("haller from my block");
+//     console.log("hello from the other side");
 // }
 
 /*
@@ -90,11 +90,11 @@ Ensure that the proper NAMING STANDARD is followed.
 // if (price<50) {
 //     console.log(`affordable`);
 // } else if (price <=75) {
-//     console.log (`pricey`);
+//     console.log (`not so affordable`);
 // } else if (price <= 90){
-//     console.log(`benta ko muna ang isang atay ko`);
+//     console.log(`uhm, that's pricey`);
 // } else {
-//     console.log(`out of the budget, puritang tunay`);
+//     console.log(`out of the budget`);
 // }
 
 /*
@@ -233,8 +233,8 @@ function inputColor (color) {
 
 inputColor(color);
 
-let name = "Jelly Lumactud";
-console.log(name.length); //14
+let name = "Steward Griffin";
+console.log(name.length); 
 //counts the number of characters that includes the spaces.
 
 //Arrays and Objects
